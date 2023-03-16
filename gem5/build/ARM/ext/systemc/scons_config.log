@@ -1,0 +1,38 @@
+file /home/a599m019/gem5-fullsys-enviroment/gem5/build/ARM/ext/systemc/SConscript,line 41:
+	Configure(confdir = build/ARM/ext/systemc/.scons_config)
+scons: Configure: Checking whether __i386__ is declared... 
+build/ARM/ext/systemc/.scons_config/conftest_35422207c1ff9f87810e3f3cf05741b3_0.c <-
+  |
+  |int main(void)
+  |{
+  |#ifndef __i386__
+  |    (void) __i386__;
+  |#endif
+  |    ;
+  |    return 0;
+  |}
+  |
+(B[m [      CC] [33mARM/ext/systemc/.scons_config/conftest_35422207c1ff9f87810e3f3cf05741b3_0[33m[1m.c[34m[1m -> [33m[1m_5687ef4375a4bdfc9cb7dad07d8a4345.o(B[m
+build/ARM/ext/systemc/.scons_config/conftest_35422207c1ff9f87810e3f3cf05741b3_0.c: In function ‘main’:
+build/ARM/ext/systemc/.scons_config/conftest_35422207c1ff9f87810e3f3cf05741b3_0.c:5:12: error: ‘__i386__’ undeclared (first use in this function)
+    5 |     (void) __i386__;
+      |            ^~~~~~~~
+build/ARM/ext/systemc/.scons_config/conftest_35422207c1ff9f87810e3f3cf05741b3_0.c:5:12: note: each undeclared identifier is reported only once for each function it appears in
+scons: Configure: no
+
+scons: Configure: Checking whether __x86_64__ is declared... 
+build/ARM/ext/systemc/.scons_config/conftest_fc5c667aeab98cc869c22ec2d558eb9d_0.c <-
+  |
+  |int main(void)
+  |{
+  |#ifndef __x86_64__
+  |    (void) __x86_64__;
+  |#endif
+  |    ;
+  |    return 0;
+  |}
+  |
+(B[m [      CC] [33mARM/ext/systemc/.scons_config/conftest_fc5c667aeab98cc869c22ec2d558eb9d_0[33m[1m.c[34m[1m -> [33m[1m_737e9bbc19de2061d624a3caf8bf0b3e.o(B[m
+scons: Configure: yes
+
+

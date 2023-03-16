@@ -1,0 +1,14 @@
+#!/bin/sh
+echo "Loading new script..."
+/sbin/m5 readfile > /tmp/runscript
+chmod 755 /tmp/runscript
+# Execute the new runscript
+if [ -s /tmp/runscript ]
+then
+        /tmp/runscript
+else
+    echo "Script not specified. Dropping into shell..."
+    /bin/bash
+fi
+echo "Fell through script. Exiting..."
+/sbin/m5 exit
