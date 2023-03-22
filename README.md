@@ -8,7 +8,18 @@ I must credit other projects which have made this possible:
 - [Buildroot,Embedded Linux Tool](https://github.com/buildroot/buildroot)
 - [The Linux Kernel](https://github.com/torvalds/linux)
 
-By default, gem5(v. 22.1.0.0) is built for the ARM ISA with no modifications.
+By default, gem5(v. 22.1.0.0) is not built, to comply with the gem5 license.
+
+To get started, build gem5:
+```bash
+cd gem5
+scons build/ARM/gem5.opt
+```
+Then, take a checkpoint:
+```bash
+cd configs
+bash take-ckpt.sh
+```
 The linux kernel is version 5.4 and the disk image contains no additional applications.
 
 See [Resources](resources/readme.md) for info on how to rebuild a disk image with applications.

@@ -1,1 +1,0 @@
-/home/a599m019/gem5-fullsys-enviroment/gem5/src/cpu/testers/garnet_synthetic_traffic/GarnetSyntheticTraffic.hh

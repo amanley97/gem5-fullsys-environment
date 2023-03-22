@@ -1,1 +1,3 @@
 linux/
+gem5/build/
+configs/ckpt/
